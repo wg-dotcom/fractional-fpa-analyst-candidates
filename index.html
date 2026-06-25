@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fractional FP&amp;A Analyst Candidates — Curated for Colleen</title>
+  <link rel="icon" type="image/png" href="https://saganrecruitment.com/wp-content/uploads/2025/10/Sagan-Favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --teal:        #093a3e;
+      --teal-deep:   #051f22;
+      --teal-soft:   #0f5258;
+      --cream:       #f3f2ec;
+      --cream-hi:    #fbfaf3;
+      --gold:        #a67714;
+      --gold-bright: #c8941e;
+      --gold-hi:     #e8b32f;
+      --ink:         #0a0e0f;
+      --ink-soft:    rgba(10,14,15,0.78);
+      --ink-mute:    rgba(10,14,15,0.55);
+      --rule:        rgba(10,14,15,0.25);
+      --rule-soft:   rgba(10,14,15,0.12);
+      --bar-track:   rgba(10,14,15,0.08);
+      --display:     'Fraunces', 'Times New Roman', serif;
+      --editorial:   'Instrument Serif', 'Times New Roman', serif;
+      --mono:        'JetBrains Mono', 'Menlo', monospace;
+      --body:        'Inter', system-ui, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      font-family: var(--body);
+      font-size: 15px;
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      font-variant-numeric: tabular-nums;
+      overflow-x: hidden;
+    }
+
+    .page-wrap { max-width: 1180px; margin: 0 auto; padding: 24px 32px 60px; }
+
+    /* TOP RAIL */
+    .top-rail { display: flex; align-items: center; justify-content: space-between; padding-bottom: 18px; border-bottom: 1.5px solid var(--ink); margin-bottom: 36px; }
+    .brand { display: flex; align-items: center; gap: 14px; }
+    .brand img { height: 22px; }
+    .brand .sep { width: 1px; height: 18px; background: var(--rule); }
+    .brand .product { font-family: var(--display); font-weight: 500; font-size: 15px; letter-spacing: -0.005em; }
+    .brand .product em { font-family: var(--editorial); font-style: italic; font-weight: 400; color: var(--teal); }
+    .top-meta { font-family: var(--mono); font-size: 10px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--ink-mute); }
+
+    /* HERO */
+    .hero { display: grid; grid-template-columns: 1.5fr 1fr; gap: 48px; margin-bottom: 56px; }
+    .hero-left { display: flex; flex-direction: column; gap: 18px; }
+    .eyebrow { font-family: var(--mono); font-size: 10px; letter-spacing: 2.2px; text-transform: uppercase; color: var(--gold); }
+    .headline { font-family: var(--display); font-weight: 300; font-size: clamp(42px, 5.6vw, 78px); line-height: 0.96; letter-spacing: -0.03em; color: var(--ink); }
+    .headline em { font-family: var(--editorial); font-style: italic; font-weight: 400; color: var(--teal); }
+    .headline .heavy { font-weight: 700; }
+    .lede { max-width: 580px; font-family: var(--editorial); font-style: italic; font-size: clamp(17px, 1.4vw, 21px); line-height: 1.4; color: var(--ink-soft); }
+    .lede strong { font-family: var(--display); font-style: normal; font-weight: 500; color: var(--teal); }
+    .hero-right { background: var(--teal-deep); color: var(--cream); padding: 28px 30px; position: relative; overflow: hidden; }
+    .hero-right::before { content: ''; position: absolute; top: -20%; right: -20%; width: 280px; height: 280px; background: radial-gradient(circle, rgba(232,179,47,0.18) 0%, transparent 70%); pointer-events: none; }
+    .hero-right .label { font-family: var(--mono); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-hi); margin-bottom: 14px; position: relative; z-index: 2; }
+    .hero-right h3 { font-family: var(--display); font-weight: 300; font-size: 26px; line-height: 1.2; letter-spacing: -0.015em; color: var(--cream); margin-bottom: 12px; position: relative; z-index: 2; }
+    .hero-right h3 em { font-family: var(--editorial); font-style: italic; color: var(--gold-hi); }
+    .hero-right p { font-size: 14.5px; color: rgba(243,242,236,0.86); line-height: 1.5; position: relative; z-index: 2; }
+    .hero-right .signoff { margin-top: 18px; font-family: var(--mono); font-size: 10px; letter-spacing: 1.4px; text-transform: uppercase; color: rgba(243,242,236,0.6); position: relative; z-index: 2; }
+
+    /* JD CALLOUT */
+    .jd-callout { background: var(--cream-hi); border-left: 3px solid var(--gold); padding: 22px 26px; margin-bottom: 48px; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 22px; }
+    .jd-callout .jd-item .label { font-family: var(--mono); font-size: 10px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+    .jd-callout .jd-item .value { font-family: var(--display); font-weight: 500; font-size: 15px; line-height: 1.3; color: var(--ink); }
+    .jd-callout .jd-item .value em { font-family: var(--editorial); font-style: italic; color: var(--teal); font-weight: 400; }
+
+    /* SECTION LABEL */
+    .section-label { display: flex; align-items: baseline; gap: 20px; padding-bottom: 14px; border-bottom: 1px solid var(--rule); margin-bottom: 28px; }
+    .section-label .num { font-family: var(--mono); font-size: 11px; letter-spacing: 1.6px; color: var(--gold); }
+    .section-label h2 { font-family: var(--display); font-weight: 400; font-size: 28px; letter-spacing: -0.018em; color: var(--ink); }
+    .section-label h2 em { font-family: var(--editorial); font-style: italic; color: var(--teal); }
+    .section-label .sub { font-family: var(--editorial); font-style: italic; font-size: 16px; color: var(--ink-mute); margin-left: auto; }
+
+    /* CANDIDATE CARD */
+    .candidate-card { margin-bottom: 36px; }
+    .card { background: var(--cream-hi); border: 1px solid var(--rule-soft); overflow: hidden; }
+    .card.featured { border: 1px solid var(--gold); box-shadow: 0 0 0 1px var(--gold-bright); }
+    .card-top { background: var(--teal); color: var(--cream); padding: 22px 28px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .card.featured .card-top { background: var(--teal-deep); position: relative; }
+    .card.featured .card-top::after { content: 'TOP MATCH'; position: absolute; top: 14px; right: 28px; font-family: var(--mono); font-size: 9px; letter-spacing: 1.6px; padding: 4px 8px; background: var(--gold-hi); color: var(--teal-deep); border-radius: 3px; }
+    .card-identity { display: flex; align-items: center; gap: 18px; }
+    .card-avatar { width: 56px; height: 56px; border-radius: 50%; background: var(--cream); color: var(--teal); display: flex; align-items: center; justify-content: center; font-family: var(--display); font-weight: 600; font-size: 19px; border: 2px solid var(--gold-bright); flex-shrink: 0; }
+    .card-name { font-family: var(--display); font-weight: 600; font-size: 22px; letter-spacing: -0.015em; color: var(--cream); margin-bottom: 4px; }
+    .card-location { display: flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.6px; color: rgba(243,242,236,0.72); }
+    .card-location svg { width: 13px; height: 13px; }
+    .card-rate { text-align: right; }
+    .card-rate-amount { font-family: var(--display); font-weight: 500; font-size: 24px; color: var(--gold-hi); letter-spacing: -0.015em; line-height: 1; }
+    .card-rate-period { font-family: var(--mono); font-size: 10px; letter-spacing: 1.6px; text-transform: uppercase; color: rgba(243,242,236,0.6); margin-top: 5px; }
+
+    .card-body { padding: 26px 28px; }
+    .card-narrative { font-family: var(--editorial); font-style: italic; font-size: 17px; line-height: 1.55; color: var(--ink-soft); margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid var(--rule-soft); }
+    .card-narrative strong { font-family: var(--display); font-style: normal; font-weight: 500; color: var(--teal); }
+
+    .section-title { font-family: var(--mono); font-size: 10px; letter-spacing: 1.8px; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; margin-top: 22px; }
+    .section-title:first-of-type { margin-top: 0; }
+
+    /* EXPERIENCE */
+    .exp-item { display: grid; grid-template-columns: 18px 1fr; gap: 12px; margin-bottom: 14px; }
+    .exp-dot-col { display: flex; flex-direction: column; align-items: center; padding-top: 5px; }
+    .exp-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+    .exp-line { width: 1.5px; flex: 1; background: var(--rule-soft); margin-top: 4px; }
+    .exp-role { font-family: var(--display); font-weight: 600; font-size: 14.5px; color: var(--ink); }
+    .exp-company { font-family: var(--mono); font-size: 11px; letter-spacing: 0.6px; color: var(--ink-mute); margin-top: 3px; margin-bottom: 6px; }
+    .exp-highlight { font-size: 13.5px; color: var(--ink-soft); line-height: 1.5; }
+
+    /* TOOLS */
+    .tags-cluster { display: flex; flex-wrap: wrap; gap: 6px; }
+    .ctag { display: inline-block; padding: 5px 12px; border-radius: 100px; font-size: 12px; font-weight: 500; background: transparent; color: var(--ink-soft); border: 1px solid var(--rule-soft); }
+    .ctag-key { background: var(--teal); color: var(--cream); border-color: var(--teal); font-weight: 500; }
+
+    /* FIT INDICATORS */
+    .fit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .fit-item { padding: 12px 14px; background: var(--cream); border-left: 2px solid var(--gold); }
+    .fit-label { font-size: 13px; color: var(--ink-soft); line-height: 1.45; }
+
+    /* STRENGTH BARS */
+    .strength-bars { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 28px; }
+    .bar-item .bar-label { font-size: 12.5px; color: var(--ink-soft); margin-bottom: 5px; display: flex; justify-content: space-between; }
+    .bar-item .bar-label .score { font-family: var(--mono); font-weight: 600; color: var(--gold); font-size: 11px; }
+    .bar-track { height: 5px; background: var(--bar-track); border-radius: 100px; overflow: hidden; }
+    .bar-fill { height: 100%; background: linear-gradient(90deg, var(--teal) 0%, var(--gold-bright) 100%); border-radius: 100px; }
+
+    /* ACTIONS */
+    .card-actions { display: flex; gap: 8px; margin-top: 22px; flex-wrap: wrap; }
+    .btn-action { display: inline-flex; align-items: center; gap: 7px; padding: 9px 16px; border-radius: 6px; font-size: 12.5px; font-weight: 500; text-decoration: none; transition: all 0.15s; cursor: pointer; border: 1.5px solid var(--teal); color: var(--teal); background: transparent; font-family: var(--body); }
+    .btn-action:hover { background: var(--teal); color: var(--cream); }
+    .btn-action.primary { background: var(--teal); color: var(--cream); }
+    .btn-action.primary:hover { background: var(--teal-deep); border-color: var(--teal-deep); }
+    .btn-action.video { background: var(--gold); color: var(--cream); border-color: var(--gold); }
+    .btn-action.video:hover { background: var(--gold-bright); border-color: var(--gold-bright); }
+    .btn-action svg { width: 13px; height: 13px; }
+
+    /* RECRUITER NOTE */
+    .recruiter-note { margin-top: 22px; padding: 20px 22px; background: var(--cream); border-left: 3px solid var(--teal); }
+    .recruiter-note-title { font-family: var(--mono); font-size: 10px; letter-spacing: 1.8px; text-transform: uppercase; color: var(--teal); margin-bottom: 10px; }
+    .recruiter-note p { font-size: 14px; color: var(--ink-soft); line-height: 1.65; }
+
+    /* COMPARISON TABLE */
+    .comparison-section { margin-top: 56px; padding-top: 36px; border-top: 1.5px solid var(--ink); }
+    .comparison-table-wrap { overflow-x: auto; }
+    .comparison-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .comparison-table th, .comparison-table td { text-align: left; padding: 11px 12px; border-bottom: 1px solid var(--rule-soft); vertical-align: top; }
+    .comparison-table thead th { font-family: var(--display); font-weight: 600; color: var(--ink); background: var(--cream-hi); border-bottom: 2px solid var(--ink); font-size: 13.5px; }
+    .comparison-table tbody td:first-child { font-family: var(--mono); font-size: 10px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--gold); font-weight: 600; background: var(--cream-hi); width: 14%; }
+    .comparison-table tbody td { color: var(--ink-soft); }
+    .highlight-cell { background: rgba(232,179,47,0.12); color: var(--ink); font-weight: 600; }
+
+    /* CLOSER */
+    .closer-card { margin-top: 48px; background: var(--teal-deep); color: var(--cream); padding: 36px 40px; position: relative; overflow: hidden; }
+    .closer-card::before { content: ''; position: absolute; bottom: -30%; left: -10%; width: 350px; height: 350px; background: radial-gradient(circle, rgba(232,179,47,0.15) 0%, transparent 70%); pointer-events: none; }
+    .closer-card .label { font-family: var(--mono); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-hi); margin-bottom: 14px; position: relative; z-index: 2; }
+    .closer-card h3 { font-family: var(--display); font-weight: 300; font-size: clamp(26px, 3.6vw, 42px); line-height: 1.1; letter-spacing: -0.025em; color: var(--cream); margin-bottom: 14px; position: relative; z-index: 2; }
+    .closer-card h3 em { font-family: var(--editorial); font-style: italic; color: var(--gold-hi); }
+    .closer-card p { font-size: 15px; color: rgba(243,242,236,0.85); line-height: 1.6; max-width: 720px; position: relative; z-index: 2; }
+    .closer-card .signoff { margin-top: 20px; font-family: var(--editorial); font-style: italic; font-size: 18px; color: var(--gold-hi); position: relative; z-index: 2; }
+
+    footer { margin-top: 36px; padding-top: 22px; border-top: 1px solid var(--rule); font-family: var(--mono); font-size: 10px; letter-spacing: 1.2px; text-transform: uppercase; color: var(--ink-mute); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+
+    @media (max-width: 1024px) {
+      .hero { grid-template-columns: 1fr; }
+      .jd-callout { grid-template-columns: 1fr 1fr; }
+      .fit-grid { grid-template-columns: 1fr; }
+      .strength-bars { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .page-wrap { padding: 20px 18px 40px; }
+      .jd-callout { grid-template-columns: 1fr; }
+      .card-top { flex-direction: column; align-items: flex-start; gap: 14px; }
+      .card-rate { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrap">
+
+    <div class="top-rail">
+      <div class="brand">
+        <img src="https://saganrecruitment.com/wp-content/uploads/2025/10/Sagan-Logo-Horizontal-Dark.png" alt="Sagan" onerror="this.style.display='none'" />
+        <span class="sep"></span>
+        <span class="product">Fractional FP&amp;A Analyst <em>· curated shortlist</em></span>
+      </div>
+      <div class="top-meta">For Colleen · June 2026</div>
+    </div>
+
+    <section class="hero">
+      <div class="hero-left">
+        <div class="eyebrow">Five candidates · Built for product roadmap cost/benefit</div>
+        <h1 class="headline">Hi <span class="heavy">Colleen,</span><br/>here's your <em>shortlist</em>.</h1>
+        <p class="lede">Five analysts pulled from our sourcing base. Each one ranked against what the JD actually requires: <strong>3-statement modeling, NPV/IRR/payback, scenario &amp; sensitivity, RICE-style prioritization, exec-ready written English.</strong> They're ordered most-relevant-first. The recruiter note on each card tells you exactly where each one fits and where the honest trade-offs are.</p>
+      </div>
+      <div class="hero-right">
+        <div class="label">What we screened for</div>
+        <h3>Business case <em>modeling</em> &mdash; not just budgets &amp; actuals.</h3>
+        <p>The JD called out independent business case construction, exposure to product/feature prioritization frameworks, and ability to challenge assumptions including ours. We ranked candidates by depth of evidence in those exact areas, not job title alone.</p>
+        <div class="signoff">Sagan Talent · June 2026</div>
+      </div>
+    </section>
+
+    <div class="jd-callout">
+      <div class="jd-item">
+        <div class="label">Engagement</div>
+        <div class="value">Project-based · <em>Fractional</em></div>
+      </div>
+      <div class="jd-item">
+        <div class="label">Modeling Core</div>
+        <div class="value">NPV · IRR · Payback · Scenarios</div>
+      </div>
+      <div class="jd-item">
+        <div class="label">Prioritization</div>
+        <div class="value">RICE · Weighted Scoring</div>
+      </div>
+      <div class="jd-item">
+        <div class="label">Stakeholders</div>
+        <div class="value">CFO · SVP-level <em>exec-ready</em></div>
+      </div>
+    </div>
+
+    <div class="section-label">
+      <span class="num">01</span>
+      <h2>The <em>shortlist</em></h2>
+      <span class="sub">Ranked by JD-specific fit</span>
+    </div>
+
+    <!-- CANDIDATE 1: ALFRED -->
+    <div class="candidate-card">
+      <div class="card featured">
+        <div class="card-top">
+          <div class="card-identity">
+            <div class="card-avatar">AM</div>
+            <div>
+              <div class="card-name">Alfred Mutuku</div>
+              <div class="card-location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Kenya · 12+ yrs FP&amp;A, MBR &amp; 3-Statement Modeling
+              </div>
+            </div>
+          </div>
+          <div class="card-rate">
+            <div class="card-rate-amount">$4,000/mo</div>
+            <div class="card-rate-period">Target rate</div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="card-narrative">Alfred is the closest match to the JD on paper and in practice. <strong>Built integrated 3-statement models from scratch with dynamic DSO/DPO/working-capital assumptions and base/downside/upside scenarios.</strong> Currently owns monthly business reviews, weekly KPI scorecards, and rolling 13-week cash forecasts. CPA-Kenya plus CFI FP&amp;A Professional certification. The discipline you'd want on a roadmap business case.</div>
+
+          <div class="section-title">Experience Highlights</div>
+          <div>
+            <div class="exp-item">
+              <div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div>
+              <div>
+                <div class="exp-role">FP&amp;A / Financial Controller</div>
+                <div class="exp-company">GitLab Inc. (Remote, San Francisco) · May 2025 – April 2026</div>
+                <div class="exp-highlight">Owned monthly reporting and financial performance analysis for 3+ entities. Built Power BI/Excel dashboards automating recurring reporting. Maintained cash flow models and working capital reports for short-term liquidity planning.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div>
+              <div>
+                <div class="exp-role">FP&amp;A Lead / Financial Analyst</div>
+                <div class="exp-company">Teita Estate Ltd · May 2017 – April 2025 (8 years)</div>
+                <div class="exp-highlight">Built business-unit P&amp;Ls, KPI dashboards, variance analysis across hospitality, production, and water operations. Maintained rolling 13-week cash flow forecasts. Reduced month-end close from 10 days to 5 by overhauling reconciliation workflows.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col"><div class="exp-dot"></div></div>
+              <div>
+                <div class="exp-role">Financial Accountant</div>
+                <div class="exp-company">Taka Taka Solutions Ltd · 2015 – 2017</div>
+                <div class="exp-highlight">High-volume AP/AR, GL reconciliations, cash planning. Managed collections for 500+ customers, improving cash conversion cycle by 25%.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-title">Modeling &amp; Tools Stack</div>
+          <div class="tags-cluster">
+            <span class="ctag ctag-key">3-Statement Modeling</span><span class="ctag ctag-key">13-Week Cash Forecasts</span><span class="ctag ctag-key">Scenario &amp; Sensitivity</span><span class="ctag ctag-key">Variance Analysis</span><span class="ctag ctag-key">Advanced Excel</span><span class="ctag ctag-key">Power BI</span>
+            <span class="ctag">Power Query · Power Pivot · DAX</span><span class="ctag">Python/Pandas</span><span class="ctag">SQL fundamentals</span><span class="ctag">QuickBooks Online</span><span class="ctag">Sage Pastel</span><span class="ctag">Bill.com · Stripe · A2X</span>
+          </div>
+
+          <div class="section-title">Why he fits Colleen's brief</div>
+          <div class="fit-grid">
+            <div class="fit-item"><div class="fit-label"><strong>3-statement modeling built from scratch</strong> with revenue/margin/DSO/DPO/capex/tax assumptions and base/downside/upside scenarios. Verified in his own writing.</div></div>
+            <div class="fit-item"><div class="fit-label"><strong>CFI FP&amp;A Professional certification</strong> plus 13-Week Cash Flow Forecast Model cert. The JD's NPV/IRR/payback core is the exact muscle these certs train.</div></div>
+            <div class="fit-item"><div class="fit-label"><strong>Executive reporting discipline:</strong> owned MBR process end-to-end at GitLab. Translates messy data into action-focused commentary.</div></div>
+            <div class="fit-item"><div class="fit-label"><strong>Honest trade-off:</strong> GitLab tenure was brief (~1 yr) and his core experience is mid-market operational FP&amp;A, not enterprise strategic capital allocation.</div></div>
+          </div>
+
+          <div class="section-title">Strength Profile</div>
+          <div class="strength-bars">
+            <div class="bar-item"><div class="bar-label">3-Statement Modeling <span class="score">92</span></div><div class="bar-track"><div class="bar-fill" style="width:92%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">Cash Flow Forecasting (13-week) <span class="score">94</span></div><div class="bar-track"><div class="bar-fill" style="width:94%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">Scenario &amp; Sensitivity Analysis <span class="score">88</span></div><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">Executive Reporting (MBR, Scorecards) <span class="score">90</span></div><div class="bar-track"><div class="bar-fill" style="width:90%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">NPV / IRR / Payback (cert-trained) <span class="score">78</span></div><div class="bar-track"><div class="bar-fill" style="width:78%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">Power BI / Data Automation <span class="score">88</span></div><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div></div>
+          </div>
+
+          <div class="card-actions">
+            <a class="btn-action primary" href="https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-351357/flowpublicid-eqbTZ7Ew1wus/c28b2109-c7bf-419f-9d1c-335d304691f0-xpAo0SyDvJjsHGK07RwH2mCcBApDgVeK5WDaAIlWaFghIDjAoFnxZOzRryjUUjNBAJCrgzlgfq4GMueOu7C2J9YUllwWab4c7ZS/Alfred_Mutuku_Senior_FPA_Analyst_Resume_HR48440.pdf" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>View Resume</a>
+            <a class="btn-action" href="https://www.linkedin.com/in/alfred-mutuku-cpa-k-047539107/" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>LinkedIn</a>
+            <a class="btn-action video" href="#" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Intro Video</a>
+          </div>
+
+          <div class="recruiter-note">
+            <div class="recruiter-note-title">Recruiter Note</div>
+            <p>Alfred's the most direct technical fit to the JD's modeling spine. In his own application he walked through a multi-entity 3-statement model from scratch, separating assumptions from actuals, structuring revenue/margin/working-capital drivers, building a base/downside/upside scenario engine, and adding self-balancing checks so ending cash always tied to cash-flow movements. That's exactly the discipline a roadmap business case demands. The 13-week cash forecast process he described shows the operational rigor of someone who's done this weekly, not just academically. The honest watch-out: his career history is heavier on operational/management reporting than on capex-style NPV/IRR investment decisions specifically. The CFI FP&amp;A cert closes the gap on paper, but it's worth probing in a screen call how often he's actually been asked to defend a single-feature ROI to a CFO. Most likely to slot in fast on the modeling side; would need ~1 cycle to build muscle on the "challenge the assumption" stress-testing side of the role.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CANDIDATE 2: INZAMUM -->
+    <div class="candidate-card">
+      <div class="card">
+        <div class="card-top">
+          <div class="card-identity">
+            <div class="card-avatar">IH</div>
+            <div>
+              <div class="card-name">Inzamum-Ul Haque</div>
+              <div class="card-location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Bangladesh · 15 yrs Controllership &amp; Audit-Grade Reporting
+              </div>
+            </div>
+          </div>
+          <div class="card-rate">
+            <div class="card-rate-amount">$3,700/mo</div>
+            <div class="card-rate-period">Target rate</div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="card-narrative">Inzamum already runs <strong>a fractional outsourced finance practice serving US and UK clients from Bangladesh.</strong> That's the engagement model the JD describes, in his own words. Big-Six audit foundation at RSM, FCCA, plus recent CFI Financial Modeling and FP&amp;A certifications. Month-end close by Day 5, rolling forecasts within ±5%. Full EST overlap.</div>
+
+          <div class="section-title">Experience Highlights</div>
+          <div>
+            <div class="exp-item">
+              <div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div>
+              <div>
+                <div class="exp-role">Outsourced Finance Practice (Founder)</div>
+                <div class="exp-company">Independent · Current — Serving US/UK clients remotely</div>
+                <div class="exp-highlight">Multi-entity consolidations across Oracle NetSuite, QuickBooks, Xero, Exact Online. Audit-ready working papers maintained as part of standard monthly close. Full EST availability.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div>
+              <div>
+                <div class="exp-role">Controller / Head of Finance</div>
+                <div class="exp-company">ShopUp &amp; Pickaboo.com · Multi-year tenure (e-commerce &amp; logistics)</div>
+                <div class="exp-highlight">Built accounting functions from the ground up. Managed teams of up to 24, oversaw $33M+ in revenue. Rebuilt cash flow statements from balance sheet movements when system outputs proved unreliable during Series B due diligence with EY.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col"><div class="exp-dot"></div></div>
+              <div>
+                <div class="exp-role">Auditor</div>
+                <div class="exp-company">RSM Bangladesh (Big-Six) · Earlier-career audit foundation</div>
+                <div class="exp-highlight">Audit training that shaped his approach to documentation, control discipline, and anticipating auditor requirements before fieldwork.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-title">Modeling &amp; Tools Stack</div>
+          <div class="tags-cluster">
+            <span class="ctag ctag-key">CFI Financial Modeling</span><span class="ctag ctag-key">CFI FP&amp;A</span><span class="ctag ctag-key">FCCA</span><span class="ctag ctag-key">Multi-Entity Consolidations</span><span class="ctag ctag-key">Cash Flow Statement Build-From-Scratch</span>
+            <span class="ctag">Oracle NetSuite</span><span class="ctag">QuickBooks Online</span><span class="ctag">Xero</span><span class="ctag">Exact Online</span><span class="ctag">Rolling Forecasts (±5%)</span><span class="ctag">Trial Balance Variance Analysis</span>
+          </div>
+
+          <div class="section-title">Why he fits Colleen's brief</div>
+          <div class="fit-grid">
+            <div class="fit-item"><div class="fit-label"><strong>Already operates as a fractional consultant</strong> to US/UK clients. NDA / IP / contractor-mode is his current default, not a stretch.</div></div>
+            <div class="fit-item"><div class="fit-label"><strong>CFI Financial Modeling + FP&amp;A certifications</strong> trained on the exact NPV/IRR/payback toolkit the JD calls out.</div></div>
+            <div class="fit-item"><div class="fit-label"><strong>EY due diligence experience at ShopUp:</strong> rebuilt cash flow statements when system outputs proved unreliable. Demonstrates challenge-the-assumption muscle.</div></div>
+            <div class="fit-item"><div class="fit-label"><strong>Honest trade-off:</strong> his recent track record is controllership and audit-grade reporting more than feature-level ROI modeling. The certs are recent; in-the-job evidence on product business cases is lighter.</div></div>
+          </div>
+
+          <div class="section-title">Strength Profile</div>
+          <div class="strength-bars">
+            <div class="bar-item"><div class="bar-label">Fractional / Multi-Client Engagement <span class="score">95</span></div><div class="bar-track"><div class="bar-fill" style="width:95%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">Multi-Entity Consolidations <span class="score">92</span></div><div class="bar-track"><div class="bar-fill" style="width:92%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">Financial Modeling (CFI-trained) <span class="score">85</span></div><div class="bar-track"><div class="bar-fill" style="width:85%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">Cash Flow Statement Build (from scratch) <span class="score">90</span></div><div class="bar-track"><div class="bar-fill" style="width:90%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">Audit-Grade Documentation <span class="score">94</span></div><div class="bar-track"><div class="bar-fill" style="width:94%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">EST Availability &amp; Communication <span class="score">90</span></div><div class="bar-track"><div class="bar-fill" style="width:90%"></div></div></div>
+          </div>
+
+          <div class="card-actions">
+            <a class="btn-action primary" href="https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-351357/flowpublicid-94pz3eMLz3us/d89456bf-7c24-4839-97be-79e431e470da-vVD4CBdlxvvUYpdPsd2w7TGw98uHLtJRyipJIzFfxc8ulzjvfZf9UsW0kCr2yekBsp0SePQFUey8cmqRUpf7j9dAHiPqJsLSwXA/Inzamum---Ul-Haque-Controller.pdf" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>View Resume</a>
+            <a class="btn-action" href="https://www.linkedin.com/in/inzamum/" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>LinkedIn</a>
+            <a class="btn-action video" href="#" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Intro Video</a>
+          </div>
+
+          <div class="recruiter-note">
+            <div class="recruiter-note-title">Recruiter Note</div>
+            <p>Inzamum's the strongest match on engagement-model and process discipline. Currently running an outsourced finance practice serving US and UK clients fractionally, which means the NDA/IP/contractor wrapper this engagement requires is his daily reality, not a learning curve. The Big-Six audit background at RSM gave him a documentation reflex that translates well to defensible business cases — he doesn't just produce numbers, he produces auditable numbers with working papers. The ShopUp story is the most telling: during EY due diligence he found the system-generated cash flow statements unreliable and rebuilt them from balance sheet movements. That's the "challenge our assumptions" muscle the JD calls out. The watch-out: he's been a controller more than a forward-looking FP&amp;A modeler, and his CFI certs in Financial Modeling and FP&amp;A are recent. He has the analytical chops; the question for screening is how often he's actually run NPV/IRR on a product feature versus on operational reporting and audit support. Strongest candidate if Colleen prioritizes "fractional consultant who runs clean process" over "FP&amp;A modeler who lives in roadmap economics."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CANDIDATE 3: AMAH -->
+    <div class="candidate-card">
+      <div class="card">
+        <div class="card-top">
+          <div class="card-identity">
+            <div class="card-avatar">AG</div>
+            <div>
+              <div class="card-name">Amah Galon</div>
+              <div class="card-location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Philippines · 15+ yrs Multi-Entity Accounting + AI-Augmented FP&amp;A
+              </div>
+            </div>
+          </div>
+          <div class="card-rate">
+            <div class="card-rate-amount">$3,500/mo</div>
+            <div class="card-rate-period">Target rate</div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="card-narrative">Amah is the wildcard. <strong>CPA + MBA + CMA</strong> with multi-jurisdictional experience across US, Canadian, Australian, and Philippine entities. Currently runs full-cycle accounting in NetSuite for a SaaS multi-entity employer. The differentiator: she actively integrates AI into her own workflows. <strong>Built a Claude-assisted Brex-to-NetSuite reconciliation automation</strong> and holds Oracle NetSuite AI Foundations certification. Seven hackathon placements signal analytical creativity beyond traditional finance profiles.</div>
+
+          <div class="section-title">Experience Highlights</div>
+          <div>
+            <div class="exp-item">
+              <div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div>
+              <div>
+                <div class="exp-role">Senior Finance Accountant</div>
+                <div class="exp-company">SaaS Company (Multi-Entity, Multi-Currency) · Current</div>
+                <div class="exp-highlight">Multi-entity AP/AR, reconciliations, GL maintenance in NetSuite. GAAP compliance, financial reporting, month-end/year-end close. Built AI-assisted automation for credit card reconciliation workflows.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div>
+              <div>
+                <div class="exp-role">Finance &amp; Accounting Manager / Chief Accountant</div>
+                <div class="exp-company">Multiple companies across tech, finance, retail, motorsports</div>
+                <div class="exp-highlight">Managed full financial functions and process improvements for multiple companies concurrently. Cross-jurisdiction GAAP fluency: US, Canadian, Australian.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col"><div class="exp-dot"></div></div>
+              <div>
+                <div class="exp-role">Hackathon Participant &amp; AI Builder</div>
+                <div class="exp-company">7 hackathon placements (3× first place in fintech &amp; blockchain) · Side track</div>
+                <div class="exp-highlight">Combines accounting rigor with technical creativity. Oracle NetSuite AI Foundations certified. Formal AI fluency training applied to real accounting processes.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-title">Modeling &amp; Tools Stack</div>
+          <div class="tags-cluster">
+            <span class="ctag ctag-key">NetSuite (multi-cert)</span><span class="ctag ctag-key">NetSuite AI Foundations</span><span class="ctag ctag-key">AI-Assisted Reconciliation</span><span class="ctag ctag-key">Multi-Entity Accounting</span><span class="ctag ctag-key">US / CA / AU GAAP</span>
+            <span class="ctag">SAP</span><span class="ctag">Xero</span><span class="ctag">QuickBooks</span><span class="ctag">FloQast</span><span class="ctag">Claude (workflow automation)</span><span class="ctag">CPA · MBA · CMA</span>
+          </div>
+
+          <div class="section-title">Why she fits Colleen's brief</div>
+          <div class="fit-grid">
+            <div class="fit-item"><div class="fit-label"><strong>15+ years multi-jurisdictional GAAP fluency</strong> across US, Canada, Australia, Philippines. Cross-border-ready by default.</div></div>
+            <div class="fit-item"><div class="fit-label"><strong>AI-augmented finance workflow practice</strong> is unusual at this seniority. For a growth-stage tech company, this signals fit beyond traditional FP&amp;A.</div></div>
+            <div class="fit-item"><div class="fit-label"><strong>Senior leadership experience</strong> as Finance &amp; Accounting Manager and Chief Accountant. Can engage CFO/SVP-level conversation comfortably.</div></div>
+            <div class="fit-item"><div class="fit-label"><strong>Honest trade-off:</strong> her core background is multi-entity accounting and reporting, not specifically capex/feature-level NPV-IRR modeling. The hackathon and AI work suggests intellectual range, not specific business-case modeling history.</div></div>
+          </div>
+
+          <div class="section-title">Strength Profile</div>
+          <div class="strength-bars">
+            <div class="bar-item"><div class="bar-label">Multi-Jurisdictional GAAP <span class="score">94</span></div><div class="bar-track"><div class="bar-fill" style="width:94%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">NetSuite &amp; ERP Depth <span class="score">95</span></div><div class="bar-track"><div class="bar-fill" style="width:95%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">AI-Augmented Workflows <span class="score">92</span></div><div class="bar-track"><div class="bar-fill" style="width:92%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">Senior Stakeholder Engagement <span class="score">85</span></div><div class="bar-track"><div class="bar-fill" style="width:85%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">Business Case / ROI Modeling <span class="score">72</span></div><div class="bar-track"><div class="bar-fill" style="width:72%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">Process Innovation &amp; Automation <span class="score">90</span></div><div class="bar-track"><div class="bar-fill" style="width:90%"></div></div></div>
+          </div>
+
+          <div class="card-actions">
+            <a class="btn-action primary" href="https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-351357/flowpublicid-fJ6i8rxMaWus/6c3dc394-b53b-4b75-8be5-0cba38039a46-pClwCUjiIz69xifH64D6iJRx1h7LgzIxatyMVacaBartUW1mUhZ9F7DhLvhZWO84QrhaYhLFkDfDwpB2PQFEf6UGoNgp0p2NDMj/Amah_Galon_Resume.pdf" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>View Resume</a>
+            <a class="btn-action" href="https://www.linkedin.com/in/ma-amah-concepcion-b-galon-cpa-mba-cma-5a641639/" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>LinkedIn</a>
+            <a class="btn-action video" href="#" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Intro Video</a>
+          </div>
+
+          <div class="recruiter-note">
+            <div class="recruiter-note-title">Recruiter Note</div>
+            <p>Amah is the most interesting wildcard on this slate. CPA, MBA, and CMA, with 15+ years of cross-jurisdictional GAAP experience across four countries. What pushes her into "consider seriously" territory for a growth-stage tech roadmap role: she's not just an accountant using AI tools, she's an accountant who builds AI-assisted automations and applies them to her own daily workflows. The Claude-powered Brex-to-NetSuite reconciliation she described is real evidence of cross-disciplinary thinking. Seven hackathon placements (including three first-place finishes in fintech and blockchain) is unusual for a finance professional and suggests genuine analytical curiosity. The honest read: her track record is heavier on accounting operations and multi-entity reporting than on capex/feature-level business case modeling. For a roadmap cost/benefit role specifically, she's not the most direct fit on paper. But if Colleen wants a fractional partner who's both rigorous on GAAP and forward-leaning on AI/tooling for the analyses themselves, Amah is the only candidate on this slate who clears both bars.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CANDIDATE 4: VIVIAN -->
+    <div class="candidate-card">
+      <div class="card">
+        <div class="card-top">
+          <div class="card-identity">
+            <div class="card-avatar">VN</div>
+            <div>
+              <div class="card-name">Vivian Njeri Ng'ang'a</div>
+              <div class="card-location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Kenya · 10 yrs Fund Accounting, REIT Multi-Entity, IFRS
+              </div>
+            </div>
+          </div>
+          <div class="card-rate">
+            <div class="card-rate-amount">$2,800/mo</div>
+            <div class="card-rate-period">Target rate</div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="card-narrative">Vivian brings the most rigorous IFRS-grade reporting depth on the slate. <strong>Manages fund accounting for two D-REITs across 18 entities</strong> at Acorn Management Services in Kenya. ACCA-qualified (all 14 papers cleared on first attempt). Negotiated $1.5M in tax savings, automated payment processing from 3 days to 2 hours, maintained financial stability through a 95% revenue decline at a 5-star hotel during COVID.</div>
+
+          <div class="section-title">Experience Highlights</div>
+          <div>
+            <div class="exp-item">
+              <div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div>
+              <div>
+                <div class="exp-role">Manager, Management Accountant</div>
+                <div class="exp-company">Acorn Holdings / Acorn Management Services · Current (Kenya)</div>
+                <div class="exp-highlight">Fund accounting for two D-REITs spanning 18 group entities. IFRS-compliant financial reporting, NAV preparation, multi-entity consolidation, tax compliance, 30+ bank account reconciliations. Generated $1.5M in tax savings through in-house optimization.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div>
+              <div>
+                <div class="exp-role">Treasury &amp; AP Supervisor</div>
+                <div class="exp-company">5-Star Hotel · Pre-Acorn tenure</div>
+                <div class="exp-highlight">Maintained financial stability through a 95% revenue decline during COVID-19. Negotiated 25% cost reductions with vendors. Reduced vendor payment processing from 3 days to 2 hours.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col"><div class="exp-dot"></div></div>
+              <div>
+                <div class="exp-role">Accounts Assistant → Management Accountant (career progression)</div>
+                <div class="exp-company">Multi-entity Kenyan accounting environments · 10 years</div>
+                <div class="exp-highlight">Progressive responsibility from transactional AP/AR through reconciliations to multi-entity management reporting. Strong technical accounting and process improvement throughout.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-title">Modeling &amp; Tools Stack</div>
+          <div class="tags-cluster">
+            <span class="ctag ctag-key">ACCA-Qualified</span><span class="ctag ctag-key">IFRS Financial Reporting</span><span class="ctag ctag-key">Multi-Entity Consolidation</span><span class="ctag ctag-key">Fund Accounting (REITs)</span><span class="ctag ctag-key">Advanced Excel</span>
+            <span class="ctag">Sun Systems</span><span class="ctag">Sage</span><span class="ctag">QuickBooks (familiar)</span><span class="ctag">NAV Preparation</span><span class="ctag">Tax Optimization</span><span class="ctag">Treasury Management</span>
+          </div>
+
+          <div class="section-title">Why she fits Colleen's brief</div>
+          <div class="fit-grid">
+            <div class="fit-item"><div class="fit-label"><strong>Deep IFRS / multi-entity rigor</strong> at 18-entity scale. The financial discipline behind a defensible business case is well-established.</div></div>
+            <div class="fit-item"><div class="fit-label"><strong>Demonstrated outcome thinking:</strong> $1.5M tax savings, 25% vendor cost reductions, 90% payment-time improvement. She drives numbers, not just reports them.</div></div>
+            <div class="fit-item"><div class="fit-label"><strong>Crisis-tested:</strong> kept financial stability intact through a 95% revenue collapse. Stress-testing assumptions is part of her muscle memory.</div></div>
+            <div class="fit-item"><div class="fit-label"><strong>Honest trade-off:</strong> her track record is fund accounting and operational finance, not product/feature ROI analysis. SaaS hybrid economics would require ramp time. The JD's must-haves on NPV/IRR/RICE aren't directly evidenced.</div></div>
+          </div>
+
+          <div class="section-title">Strength Profile</div>
+          <div class="strength-bars">
+            <div class="bar-item"><div class="bar-label">IFRS &amp; Multi-Entity Reporting <span class="score">94</span></div><div class="bar-track"><div class="bar-fill" style="width:94%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">Fund Accounting Discipline <span class="score">92</span></div><div class="bar-track"><div class="bar-fill" style="width:92%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">Tax &amp; Treasury Optimization <span class="score">88</span></div><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">Process Automation Track Record <span class="score">85</span></div><div class="bar-track"><div class="bar-fill" style="width:85%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">Business Case / NPV-IRR Modeling <span class="score">65</span></div><div class="bar-track"><div class="bar-fill" style="width:65%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">SaaS / Tech Roadmap Context <span class="score">55</span></div><div class="bar-track"><div class="bar-fill" style="width:55%"></div></div></div>
+          </div>
+
+          <div class="card-actions">
+            <a class="btn-action primary" href="https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-351357/flowpublicid-iUFatH7uNBus/f702487e-f765-49a1-b61c-969502597b7c-hymVgxXXa0sBLoUvQDgQ3ORWmxZuDaCEYjqsEUwccajZs1XMpjHQvn9LvMIpyNRSbs6zDPEYr6KVkXIk0lBr1c3r0KM4cCIA5Lk/Vivian-Ng'ang'a---CV.pdf" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>View Resume</a>
+            <a class="btn-action" href="https://www.linkedin.com/in/vivian-njeri" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>LinkedIn</a>
+            <a class="btn-action video" href="#" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Intro Video</a>
+          </div>
+
+          <div class="recruiter-note">
+            <div class="recruiter-note-title">Recruiter Note</div>
+            <p>Vivian is the most technically rigorous fund-accounting-grade pick on this slate, but she's also the most stretch-fit for a product roadmap ROI role specifically. Owning IFRS-compliant fund accounting across 18 D-REIT entities is no small thing, and the outcome metrics in her track record (the $1.5M tax savings, the 25% vendor cost negotiation, the 95% revenue-decline survival story) suggest she thinks in business outcomes, not just bookkeeping mechanics. The discipline behind a defensible business case — clean assumptions, audit-grade documentation, multi-stakeholder transparency — is clearly there. The honest gap: her career hasn't asked her to build feature-level NPV/IRR/payback models or work inside SaaS hybrid economics. She'd need to be paired with someone on the product side who can frame the questions, and she'd ramp on RICE / weighted scoring as a methodology. If Colleen wants someone with deep technical discipline who can be trusted with the modeling once the brief is set, Vivian's a viable consultant. If she wants someone who walks in already speaking roadmap economics, Alfred or Inzamum are closer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CANDIDATE 5: LADY -->
+    <div class="candidate-card">
+      <div class="card">
+        <div class="card-top">
+          <div class="card-identity">
+            <div class="card-avatar">LA</div>
+            <div>
+              <div class="card-name">Lady (Milibeth) Alcivar</div>
+              <div class="card-location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Ecuador · 6 yrs US-Remote Controller &amp; Multi-Entity Ops
+              </div>
+            </div>
+          </div>
+          <div class="card-rate">
+            <div class="card-rate-amount">$2,500/mo</div>
+            <div class="card-rate-period">Target rate (asking up to $3,500)</div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="card-narrative">Lady runs <strong>full-cycle accounting for five US LLCs simultaneously from Ecuador</strong>, executing month-end close, reconciliations, financial statement prep, and variance analysis. MBA from a Canadian institution plus CPA-equivalent degree from Ecuador. QuickBooks Online certified, Bill.com, Gusto, ServiceTitan. Strong on the controller side; the gap relative to this JD is product/roadmap business case modeling specifically.</div>
+
+          <div class="section-title">Experience Highlights</div>
+          <div>
+            <div class="exp-item">
+              <div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div>
+              <div>
+                <div class="exp-role">Senior Accountant / Financial Controller (Remote)</div>
+                <div class="exp-company">Multiple US-based companies (5 LLCs simultaneously) · Current</div>
+                <div class="exp-highlight">Full-cycle accounting across five US LLCs: month-end close, reconciliations, financial statement prep, variance analysis, tax compliance coordination, intercompany transactions.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div>
+              <div>
+                <div class="exp-role">Earlier Accounting &amp; Process-Migration Roles</div>
+                <div class="exp-company">Various US-remote clients · 6 years progressive</div>
+                <div class="exp-highlight">Migrated companies from spreadsheets to structured accounting systems (primarily QuickBooks Online). Authored financial SOPs. Cleaned up messy books to establish audit-ready infrastructure.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-title">Modeling &amp; Tools Stack</div>
+          <div class="tags-cluster">
+            <span class="ctag ctag-key">QuickBooks Online (Certified)</span><span class="ctag ctag-key">US GAAP Working Knowledge</span><span class="ctag ctag-key">Multi-Entity Accounting</span><span class="ctag ctag-key">Excel Modeling</span><span class="ctag ctag-key">MBA + CPA-Equivalent</span>
+            <span class="ctag">Bill.com</span><span class="ctag">Gusto</span><span class="ctag">ServiceTitan</span><span class="ctag">Variance Analysis</span><span class="ctag">Forecasting (supporting)</span><span class="ctag">Bilingual Communication</span>
+          </div>
+
+          <div class="section-title">Why she fits Colleen's brief</div>
+          <div class="fit-grid">
+            <div class="fit-item"><div class="fit-label"><strong>Already operates in a US-remote contractor model</strong> serving multiple US clients simultaneously. The engagement format the JD describes is her normal work pattern.</div></div>
+            <div class="fit-item"><div class="fit-label"><strong>Multi-entity full-cycle competence</strong> with verified US GAAP fluency. Clean, audit-ready output is her standard.</div></div>
+            <div class="fit-item"><div class="fit-label"><strong>Cost-effective entry point</strong> at $2,500/month. If the engagement scope is closer to controller-style FP&amp;A support, she's the budget-friendly fit.</div></div>
+            <div class="fit-item"><div class="fit-label"><strong>Honest trade-off:</strong> her core is controllership and accounting. The JD's emphasis on independent business case construction, NPV/IRR, and product/feature prioritization isn't directly evidenced in her track record.</div></div>
+          </div>
+
+          <div class="section-title">Strength Profile</div>
+          <div class="strength-bars">
+            <div class="bar-item"><div class="bar-label">US-Remote Multi-Client Operation <span class="score">90</span></div><div class="bar-track"><div class="bar-fill" style="width:90%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">QuickBooks &amp; Multi-Entity GL <span class="score">92</span></div><div class="bar-track"><div class="bar-fill" style="width:92%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">US GAAP Working Knowledge <span class="score">82</span></div><div class="bar-track"><div class="bar-fill" style="width:82%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">Process &amp; SOP Documentation <span class="score">88</span></div><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">Business Case / ROI Modeling <span class="score">58</span></div><div class="bar-track"><div class="bar-fill" style="width:58%"></div></div></div>
+            <div class="bar-item"><div class="bar-label">Roadmap Prioritization (RICE etc.) <span class="score">45</span></div><div class="bar-track"><div class="bar-fill" style="width:45%"></div></div></div>
+          </div>
+
+          <div class="card-actions">
+            <a class="btn-action primary" href="https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-351357/flowpublicid-aK6bpmLhptus/fc5c187c-b132-467b-9539-82da1afe50b2-ikkOd9jqUsAajgF0lhgN13FHxU39520YB4ISkDB12LI9siARBUA92OroWOwNrZ2TWQZVi2YBRXTjWUg4fwepJy1WeKOO4kR8Me4/CV-Milibeth-Alcivar-FinancialController.pdf" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>View Resume</a>
+            <a class="btn-action" href="https://www.linkedin.com/in/milialcivar49/" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>LinkedIn</a>
+            <a class="btn-action video" href="#" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Intro Video</a>
+          </div>
+
+          <div class="recruiter-note">
+            <div class="recruiter-note-title">Recruiter Note</div>
+            <p>Lady is the most controller-flavored profile on this slate, and the most cost-effective. Six years running US-remote accounting for multiple US LLCs simultaneously is a clear signal of remote-fluent execution and US GAAP fluency. The QuickBooks Online certification plus Bill.com plus Gusto plus ServiceTitan stack is well-aligned for early-to-mid-stage tech operations. The honest read against this specific JD: she's strong on the "clean, auditable models" side and the "translate analysis into reports" side, but the JD's center of gravity is business case construction for product roadmap initiatives, including NPV/IRR/payback frameworks and exposure to RICE-style prioritization. That isn't where her track record sits. If Colleen's underlying need turns out to be lighter on roadmap modeling and heavier on monthly close, multi-entity reporting, or fractional controllership, Lady becomes a much stronger fit. For the exact JD as written, she's the longest-distance match on the slate and would need a clear scoping conversation before the project starts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMPARISON TABLE -->
+    <div class="comparison-section">
+      <div class="section-label">
+        <span class="num">02</span>
+        <h2>Side-by-side <em>comparison</em></h2>
+        <span class="sub">Quick reference for prioritizing screens</span>
+      </div>
+      <div class="comparison-table-wrap">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Criteria</th>
+              <th>Alfred Mutuku</th>
+              <th>Inzamum-Ul Haque</th>
+              <th>Amah Galon</th>
+              <th>Vivian Njeri</th>
+              <th>Lady Alcivar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Location</td><td>Kenya (EAT)</td><td>Bangladesh (BST, full EST overlap)</td><td>Philippines (PHT)</td><td>Kenya (EAT)</td><td>Ecuador (ECT)</td></tr>
+            <tr><td>Years of Experience</td><td>12+</td><td>15</td><td>15+</td><td>10</td><td>6</td></tr>
+            <tr><td>Core Lens</td><td class="highlight-cell">FP&amp;A / MBR / 3-statement modeling</td><td class="highlight-cell">Controllership + fractional consulting</td><td>Multi-entity accounting + AI-augmented</td><td>Fund accounting (REITs) / IFRS</td><td>US-remote controller / multi-LLC</td></tr>
+            <tr><td>Top Modeling Cred</td><td class="highlight-cell">CFI FP&amp;A Professional · 13-Week Cash Flow cert</td><td class="highlight-cell">CFI Financial Modeling + CFI FP&amp;A</td><td>NetSuite AI Foundations · 7 hackathon places</td><td>ACCA (14/14 first attempt)</td><td>QuickBooks Online certified</td></tr>
+            <tr><td>Business Case / NPV-IRR Evidence</td><td class="highlight-cell">Strongest (built 3-statement scenario models from scratch)</td><td>Moderate (certs recent; track record in controllership)</td><td>Light (track record in accounting, not capex modeling)</td><td>Light (deep IFRS, not feature ROI)</td><td>Lightest (controllership focus)</td></tr>
+            <tr><td>Fractional/Consulting Context</td><td>Has worked remote/multi-entity but not as a sole-practitioner</td><td class="highlight-cell">Currently runs own outsourced practice for US/UK clients</td><td>Currently in-house at SaaS multi-entity</td><td>Currently in-house at Acorn</td><td class="highlight-cell">Multi-client US-remote model</td></tr>
+            <tr><td>Tools / Stack</td><td>Power BI · Excel · Python/Pandas · SQL · QBO</td><td>Oracle NetSuite · QBO · Xero · Exact Online</td><td>NetSuite (multi-cert) · SAP · Xero · FloQast · Claude</td><td>Sun Systems · Sage · Excel · QBO familiar</td><td>QBO · Bill.com · Gusto · ServiceTitan · Excel</td></tr>
+            <tr><td>Education</td><td>CPA-K · B.Comm Accounting · CFI FP&amp;A</td><td>FCCA · CFI (FM &amp; FP&amp;A)</td><td>CPA · MBA · CMA</td><td>ACCA (all 14 papers, first attempt)</td><td>MBA (Canada) · CPA-equivalent (Ecuador)</td></tr>
+            <tr><td>Asking Rate (USD/mo)</td><td>$4,000</td><td>$3,700</td><td>$3,500</td><td>$2,800</td><td>$2,500</td></tr>
+            <tr><td>Average Score (Sagan)</td><td>82</td><td class="highlight-cell">94</td><td>92</td><td>92</td><td>92</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- CLOSER -->
+    <div class="closer-card">
+      <div class="label">Next step</div>
+      <h3>Want to <em>screen any of these</em> this week?</h3>
+      <p>The two we'd put in front of you first are <strong>Alfred</strong> (purest modeling fit) and <strong>Inzamum</strong> (fractional engagement fit). <strong>Amah</strong> is worth a wildcard slot if you value AI-tooling instincts. The other two are stronger for adjacent scopes if this engagement evolves. Reply with names and we'll line up 30-minute screens within 48 hours. NDA and IP terms are handled through the platform per the JD.</p>
+      <div class="signoff">— Jesus &amp; the Sagan team</div>
+    </div>
+
+    <footer>
+      <div>Sagan · Curated shortlist for Colleen</div>
+      <div>FP&amp;A Fractional · Roadmap Cost/Benefit · June 2026</div>
+    </footer>
+
+  </div>
+</body>
+</html>
